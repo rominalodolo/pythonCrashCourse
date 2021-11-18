@@ -12,5 +12,7 @@ print"Hello world!")
 
 
 #1.3 Infinite Skills:
-#There are way too many ideas in my head to even list here but I already keep a journal of it all. I will create and build programs that inspire others in the future to come. 
+#There are way too many ideas in my head to even list here 
+#but I already keep a journal of it all. 
+# I will create and build programs that inspire others in the future to come. 
 
