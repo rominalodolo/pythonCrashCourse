@@ -93,9 +93,17 @@ the appropriate list.
 printing to save space. Choose a version of foods.py, and write two for loops to print each list of
 foods.
 
-#4.13
-Buffet: A buffet-style restaurant offers only five basic foods. Think of five simple foods,
-and store them in a tuple.
+#4.13 Buffet:
+
+basic_menu = (
+    "beyond beef burger", "veggie spring roll", "grilled cheese", "ice-cream sunday", "",
+)
+
+print("These are the items you can choose from: ")
+for item in basic_menu:
+    print(f"- {item}")
+
+
 Use a for loop to print each food the restaurant offers.
 Try to modify one of the items, and make sure that Python rejects
 the change.
@@ -104,15 +112,14 @@ different foods. Add a line that rewrites the tuple, and then use a
 for loop to print each of the items on the revised menu.
 
 #4.14
-PEP 8: Look through the original PEP 8 style guide at https://python.org/dev/peps/pep-
-0008/. You won’t use much of it now, but it might be interesting to skim through it.
+# PEP 8: Look through the original PEP 8 style guide at https://python.org/dev/peps/pep-0008/. 
 
-#4.15
-Code Review: Choose three of the programs you’ve written in this chapter and modify
-each one to comply with PEP 8:
-Use four spaces for each indentation level. Set your text editor to
-insert four spaces every time you press TAB, if you haven’t already
-done so (see Appendix B for instructions on how to do this).
-Use less than 80 characters on each line, and set your editor to
-show a vertical guideline at the 80th character position.
-Don’t use blank lines excessively in your program files.
+#4.15 Code Review:
+# Choose three of the programs you’ve written in this chapter and modify
+# each one to comply with PEP 8:
+# Use four spaces for each indentation level. Set your text editor to
+# insert four spaces every time you press TAB, if you haven’t already
+# done so (see Appendix B for instructions on how to do this).
+# Use less than 80 characters on each line, and set your editor to
+# show a vertical guideline at the 80th character position.
+# Don’t use blank lines excessively in your program files.
