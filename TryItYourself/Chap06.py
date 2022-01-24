@@ -70,7 +70,7 @@ terms to your glossary. When you run your program again, these new words and mea
 should automatically be included in the output.
 
 
-#6-5 
+#6.5 
 Rivers: Make a dictionary containing three major rivers and the country each river runs
 through. One key-value pair might be 'nile': 'egypt'.
 Use a loop to print a sentence about each river, such as The Nile
@@ -105,30 +105,44 @@ called pets. Next, loop through your list and as you do, print everything you kn
 pet.
 
 
-#6.9 Favorite Places: Make a dictionary called favorite_places. Think of three names to use
-as keys in the dictionary, and store one to three favorite places for each person. To make this
-exercise a bit more interesting, ask some friends to name a few of their favorite places. Loop
-through the dictionary, and print each person’s name and their favorite places.
+#6.9 Favorite Places: 
+favorite_places = {
+    "romi": ["hydrabad", "gozo", "mykonos"],
+    "sally": ["paris", "cape town"],
+    "": []
+    }
+for name, places in favorite_places.items():
+    print(f"\n{name.title()} likes the following places:")
+    for place in places:
+        print(f"- {place.title()}")
 
-#6.10
- Favorite Numbers: Modify your program from Exercise 6-2 (page 99) so each person
+
+#6.10 Favorite Numbers: 
+Modify your program from Exercise 6-2 (page 99) so each person
 can have more than one favorite number. Then print each person’s name along with their
 favorite numbers.
 
  
-#6.11
- Cities: Make a dictionary called cities. Use the names of three cities as keys in your
-dictionary. Create a dictionary of information about each city and include the country that the
+#6.11 Cities: 
+cities = {
+    'jefferys bay': {
+        'country': 'south africa',
+        ''
+    }
+    'mumbai': {
+        'country': 'india',
+        ''
+    }
+    ''
+}
+Create a dictionary of information about each city and include the country that the
 city is in, its approximate population, and one fact about that city. The keys for each city’s
 dictionary should be something like country, population, and fact. Print the name of each
 city and all of the information you have stored about it.
 
 
-#6.12
- Extensions: We’re now working with examples that are complex enough that they can
-be extended in any number of ways. Use one of the example programs from this chapter, and
-extend it by adding new keys and values, changing the context of the program or improving the
-formatting of the output.
+#6.12 Extensions: 
+# Use one of the example programs from this chapter, and extend it by adding new keys and values, changing the context of the program or improving the formatting of the output.
 
 
 

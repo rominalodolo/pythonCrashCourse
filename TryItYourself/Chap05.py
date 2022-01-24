@@ -106,8 +106,8 @@ used, 'JOHN' should not be accepted. (To do this, you’ll need to
 make a copy of current_users containing the lowercase versions of all
 existing users.)
 
-#5-11
- Ordinal Numbers: Ordinal numbers indicate their position in a list, such as 1st or 2nd.
+#5-11 Ordinal Numbers: 
+Ordinal numbers indicate their position in a list, such as 1st or 2nd.
 Most ordinal numbers end in th, except 1, 2, and 3.
 Store the numbers 1 through 9 in a list.
 Loop through the list.
@@ -115,14 +115,11 @@ Use an if-elif-else chain inside the loop to print the proper ordinal
 ending for each number. Your output should read "1st 2nd 3rd 4th
 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
-#5-12
- Styling if statements: Review the programs you wrote in this chapter, and make sure
-you styled your conditional tests appropriately.
+#5.12 Styling if statements: 
+# Review the programs you wrote in this chapter
 
-#5.13 
-Your Ideas: At this point, you’re a more capable programmer than you were when you
-started this book. Now that you have a better sense of how real-world situations are modeled in
-programs, you might be thinking of some problems you could solve with your own programs.
-Record any new ideas you have about problems you might want to solve as your programming
-skills continue to improve. Consider games you might want to write, data sets you might want
-to explore, and web applications you’d like to create.
+#5.13 My Ideas:
+# Think of some problems you could solve with your own programs.
+# Record any new ideas you have about problems you might want to solve as your programming
+# skills continue to improve. Consider games you might want to write, data sets you might want
+# to explore, and web applications you’d like to create.

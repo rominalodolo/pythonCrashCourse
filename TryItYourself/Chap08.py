@@ -1,5 +1,3 @@
-
-
 #8.1 Message: 
 
 Write a function called display_message() that prints one sentence telling
@@ -113,6 +111,6 @@ from module_name import function_name as fn
 import module_name as mn
 from module_name import *
 
-8-17. Styling Functions: Choose any three programs you wrote for this chapter, and make
-sure they follow the styling guidelines described in this section
+# 8-17. Styling Functions: Choose any three programs you wrote for this chapter
+# make sure they follow the styling guidelines described in this section
 
