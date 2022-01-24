@@ -62,12 +62,17 @@ numbers from 1 to 20. Use a for loop to print each number.
 #4.7 Threes: Make a list of the multiples of 3 from 3 to 30. Use a for loop to print the
 numbers in your list.
 
-#4.8 Cubes: A number raised to the third power is called a cube. For example, the cube of 2 is
-written as 2**3 in Python. Make a list of the first 10 cubes (that is, the cube of each integer
-from 1 through 10), and use a for loop to print out the value of each cube.
+#4.8 Cubes: 
+cubes = []
+for number in range(1, 11):
+    cube = number**3
+    cubes.append(cube)
+
+for cube in cubes:
+    print(cube)
 
 
-#4.9 Cube Comprehension: 
+#4.9 Cube Comprehension
 cubes = [number**3 for number in range(1,11)]
 
 for cube in cubes:
@@ -79,7 +84,9 @@ Print the message The first three items in the list are:. Then use a
 slice to print the first three items from that program’s list.
 Print the message Three items from the middle of the list are:. Use a
 slice to print three items from the middle of the list.
-Print the message The last three items in the list are:. Use a slice to
+Print the message 
+
+print (f"The last three items in the list are:." Use a slice to
 print the last three items in the list.
 
 #4.11
