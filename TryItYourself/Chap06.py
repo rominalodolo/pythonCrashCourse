@@ -109,7 +109,7 @@ pet.
 favorite_places = {
     "romi": ["hydrabad", "gozo", "mykonos"],
     "sally": ["paris", "cape town"],
-    "": []
+    "john": ["new york", "jburg"]
     }
 for name, places in favorite_places.items():
     print(f"\n{name.title()} likes the following places:")
@@ -127,22 +127,33 @@ favorite numbers.
 cities = {
     'jefferys bay': {
         'country': 'south africa',
-        ''
-    }
+        'population': '27 thousand',
+        'fact': 'it is the best surfing destination',
+    },
     'mumbai': {
         'country': 'india',
-        ''
+        'population': '20.4 million',
+        'fact': 'it is also known as bombay',
+    },
+    'selima': {
+        'country': 'malta',
+        'population': '22 thousand',
+        'fact': 'it is known as a resort town',
     }
-    ''
 }
-Create a dictionary of information about each city and include the country that the
-city is in, its approximate population, and one fact about that city. The keys for each city’s
-dictionary should be something like country, population, and fact. Print the name of each
-city and all of the information you have stored about it.
+for city, city_info in cities.items():
+    country = city_info['country'].title()
+    population = city_info['population']
+    facts = city_info['fact'].title()
 
+    print(f"\n{city.title()} is in {country}.")
+    print(f"  It has a population of about {population} people.")
+    print(f"  A fun fact is that {facts}.")
 
 #6.12 Extensions: 
-# Use one of the example programs from this chapter, and extend it by adding new keys and values, changing the context of the program or improving the formatting of the output.
+# Use one of the example programs from this chapter
+# extend it by adding new keys and values, changing the context of the program 
+# or improving the formatting of the output.
 
 
 
