@@ -1,30 +1,41 @@
 #4.1
 
-myPizzas = 'Margarita', 'Vegetarian', '4Cheeses'  
+myPizzas = ['Margarita', 'Vegetarian', '4Cheeses']
 
- Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a
-list, and then use a for loop to print the name of each pizza.
-Modify your for loop to print a sentence using the name of the
-pizza instead of printing just the name of the pizza. For each pizza
-you should have one line of output containing a simple statement
-like I like pepperoni pizza.
-Add a line at the end of your program, outside the for loop, that
-states how much you like pizza. The output should consist of three
-or more lines about the kinds of pizza you like and then an
-additional sentence, such as I really love pizza!
+for pizza in myPizzas:
+    print(pizza)
+
+print("\n")
+
+for pizza in myPizzas:
+        print(f"I like {pizza} pizza!")
+
+print("\nI really love pizza!")
+ 
 
 
 #4.2
 
+animals = ['dog', 'cat', 'rabbit']
+
+for pet in animals:
+    print (f"{pet}")
 
 
- Animals: Think of at least three different animals that have a common characteristic.
-Store the names of these animals in a list, and then use a for loop to print out the name of each
-animal.
-Modify your program to print a statement about each animal, such as A dog would make a great pet.
-Add a line at the end of your program stating what these animals
-have in common. You could print a sentence such as Any of these
-animals would make a great pet!
+animals = ['dog', 'cat', 'rabbit']
+
+print(f"A {animals[0]} would make a great best friend.")
+print("\n")
+
+print(f"A {animals[1]} would make a great mess.")
+print("\n")
+
+print(f"A {animals[2]} would make a great day even better!")
+print("\n")
+
+print(f"Any of these animals would make a great pet!")
+print("\n")
+
 
 #4.3
  Counting to Twenty: Use a for loop to print the numbers from 1 to 20, inclusive.
