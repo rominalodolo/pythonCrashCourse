@@ -50,17 +50,27 @@ for number in numbers:
     print(number)
 # (If the output is taking too long, stop it by pressing CTRL-C or by closing the output window.)
 
-#4.5 Summing a Million: Make a list of the numbers from one to one million, and then use
-min() and max() to make sure your list actually starts at one and ends at one million. Also, use
-the sum() function to see how quickly Python can add a million numbers.
+
+#4.5 Summing a Million: 
+numbers = list(range(1, 1_000_001))
+
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
 
 
-#4.6. Odd Numbers: Use the third argument of the range() function to make a list of the odd
+#4.6. Odd Numbers: 
+Use the third argument of the range() function to make a list of the odd
 numbers from 1 to 20. Use a for loop to print each number.
+numbers = list(range(1, 21))
+print(numbers)
 
 
-#4.7 Threes: Make a list of the multiples of 3 from 3 to 30. Use a for loop to print the
-numbers in your list.
+#4.7 Threes: 
+threes = list(range(3, 31, 3))
+
+for number in threes:
+    print(number)
 
 #4.8 Cubes: 
 cubes = []
@@ -78,7 +88,8 @@ cubes = [number**3 for number in range(1,11)]
 for cube in cubes:
     print(cube)
 
-#4.10 Slices: Using one of the programs you wrote in this chapter, add several lines to the end
+#4.10 Slices: 
+Using one of the programs you wrote in this chapter, add several lines to the end
 of the program that do the following:
 Print the message The first three items in the list are:. Then use a
 slice to print the first three items from that program’s list.
@@ -105,7 +116,8 @@ for pizza in friend_pizzas:
     print(f"- {pizza}")
 
 
-#4.12 More Loops: All versions of foods.py in this section have avoided using for loops when
+#4.12 More Loops: 
+All versions of foods.py in this section have avoided using for loops when
 printing to save space. Choose a version of foods.py, and write two for loops to print each list of
 foods.
 
