@@ -1,9 +1,21 @@
-10-3. Guest: Write a program that prompts the user for their name. When they respond, write
-their name to a file called guest.txt.
-10-4. Guest Book: Write a while loop that prompts users for their name. When they enter
+#10.3 Guest
+name = input("What's your name? ")
+
+filename = 'guest.txt'
+
+with open(filename, 'w') as f:
+    f.write(name)
+
+
+#10.4 Guest Book
+Write a while loop that prompts users for their name. When they enter
 their name, print a greeting to the screen and add a line recording their visit in a file called
 guest_book.txt. Make sure each entry appears on a new line in the file.
-10-5. Programming Poll: Write a while loop that asks people why they like programming.
+
+
+#10.5 Programming Poll
+
+Write a while loop that asks people why they like programming.
 Each time someone enters a reason, add their reason to a file that stores all the responses.
 
 10-6. Addition: One common problem when prompting for numerical input occurs when
@@ -51,6 +63,42 @@ works.
 
 
 # 10.13 Verify User: 
+
+import json
+
+def get_stored_username():
+    """Get stored username if available."""
+    filename = 'username.json'
+    try:
+        with open(filename) as f_obj:
+            username = json.load(f_obj)
+    except FileNotFoundError:
+        return None
+    else:
+        return username
+
+def get_new_username():
+    """Prompt for a new username."""
+    username = input("What is your name? ")
+    filename = 'username.json'
+    with open(filename, 'w') as f_obj:
+        json.dump(username, f_obj)
+    return username
+
+def greet_user():
+    """Greet the user by name."""
+    username = get_stored_username()
+    if username:
+        correct = input(f"Are you {username}? (y/n) ")
+        if correct == 'y':
+            print(f"Welcome back, {username}!")
+            return
+            
+    username = get_new_username()
+    print(f"We'll remember you when you come back, {username}!")
+
+greet_user()
+
 The final listing for remember_me.py assumes either that the user has
 already entered their username or that the program is running for the first time. We should
 modify it in case the current user is not the person who last used the program.
